@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("humanin-theme");if(_t==="light"||_t==="dark")do
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fde998; --sky-deep:#a16207;
-  --teal:#fdefb6; --teal-deep:#713f12;
-  --org:#b77f2d; --org-deep:#64380f;
-  --amber:#ef9b0a; --rose:#f46884; --cyan:#fef8e1;
+  --sky:#f472b6; --sky-deep:#e41280;
+  --teal:#818cf8; --teal-deep:#172bf2;
+  --org:#a3e635; --org-deep:#669813;
+  --amber:#e11d48; --rose:#f472b6; --cyan:#818cf8;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fde998 5%,#fdefb6 50%,#b77f2d 95%);
+  --grad:linear-gradient(100deg,#fc99cd 5%,#b6bdfd 50%,#83b72d 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(161, 98, 7,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(105, 58, 17,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(113, 63, 18,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(244, 104, 132,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(161,7,88,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(17,25,105,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(18,27,113,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(244,104,177,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(161, 98, 7,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(105, 58, 17,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(113, 63, 18,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(161,7,88,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(17,25,105,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(18,27,113,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#855105; --sky-deep:#5f350f;
-  --teal:#693a11; --teal-deep:#502c0c;
-  --org:#855105; --org-deep:#5f350f;
-  --amber:#9d4510; --rose:#c92552; --cyan:#78b717;
+  --sky:#f40c85; --sky-deep:#8a064b;
+  --teal:#1a2ff9; --teal-deep:#04139f;
+  --org:#f40c85; --org-deep:#8a064b;
+  --amber:#6da60f; --rose:#8c0d29; --cyan:#f40c85;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#855105,#693a11,#945a06);
+  --grad:linear-gradient(100deg,#850548,#111969,#940650);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,12 +129,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(239, 155, 10,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(239, 155, 10,.55)}70%{box-shadow:0 0 0 12px rgba(239, 155, 10,0)}100%{box-shadow:0 0 0 0 rgba(239, 155, 10,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(239,10,60,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(239,10,60,.55)}70%{box-shadow:0 0 0 12px rgba(239,10,60,0)}100%{box-shadow:0 0 0 0 rgba(239,10,60,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(242, 128, 53,.12);color:var(--org);border:1px solid rgba(242, 128, 53,.35)}
-.kv .k.a{background:rgba(239, 155, 10,.12);color:var(--amber);border:1px solid rgba(239, 155, 10,.35)}
-.kv .k.g{background:rgba(244, 104, 132,.12);color:var(--rose);border:1px solid rgba(244, 104, 132,.35)}
+.kv .k.o{background:rgba(53,70,242,.12);color:var(--org);border:1px solid rgba(53,70,242,.35)}
+.kv .k.a{background:rgba(239,10,60,.12);color:var(--amber);border:1px solid rgba(239,10,60,.35)}
+.kv .k.g{background:rgba(244,104,177,.12);color:var(--rose);border:1px solid rgba(244,104,177,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(161, 98, 7,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(161,7,88,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,14 +208,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(239, 155, 10,.4);background:rgba(239, 155, 10,.08);
+  color:var(--amber);border:1px solid rgba(239,10,60,.4);background:rgba(239,10,60,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -231,7 +231,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(239, 155, 10,.06);border:1px solid rgba(239, 155, 10,.3);border-radius:var(--radius);
+.folk-note{background:rgba(239,10,60,.06);border:1px solid rgba(239,10,60,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -242,9 +242,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(239, 155, 10,.1);color:var(--amber);border:1px solid rgba(239, 155, 10,.4)}
-.lvl-theory .level{background:rgba(242, 128, 53,.1);color:var(--org);border:1px solid rgba(242, 128, 53,.4)}
-.lvl-unknown .level{background:rgba(244, 104, 132,.1);color:var(--rose);border:1px solid rgba(244, 104, 132,.4)}
+.lvl-known .level{background:rgba(239,10,60,.1);color:var(--amber);border:1px solid rgba(239,10,60,.4)}
+.lvl-theory .level{background:rgba(53,70,242,.1);color:var(--org);border:1px solid rgba(53,70,242,.4)}
+.lvl-unknown .level{background:rgba(244,104,177,.1);color:var(--rose);border:1px solid rgba(244,104,177,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +265,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +280,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(244, 104, 132,.05);border:1px solid rgba(244, 104, 132,.3);border-radius:var(--radius);
+.limits{background:rgba(244,104,177,.05);border:1px solid rgba(244,104,177,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -333,9 +332,40 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
 .flowseq{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
+.flowseq1{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
+/* ---------- benefits / fit chapters (2026-10-06) ---------- */
+.tier{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.6rem;margin-bottom:1.3rem;position:relative;overflow:hidden}
+.tier::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.tier-est::before{background:linear-gradient(90deg,var(--teal),var(--sky))}
+.tier-emg::before{background:linear-gradient(90deg,var(--org),var(--amber))}
+.tier-com::before{background:linear-gradient(90deg,var(--amber),var(--rose))}
+.tbadge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;padding:.35rem .75rem;border-radius:8px;margin-bottom:.8rem}
+.b-est{background:rgba(20,184,166,.12);color:var(--teal);border:1px solid rgba(20,184,166,.45)}
+.b-emg{background:rgba(61,78,250,.12);color:var(--org);border:1px solid rgba(61,78,250,.45)}
+.b-com{background:rgba(38,57,249,.12);color:var(--amber);border:1px solid rgba(38,57,249,.45)}
+.tier .tintro{color:var(--muted);font-size:.95rem;margin-bottom:.2rem}
+.tlist{list-style:none;margin:.7rem 0 0;padding:0}
+.tlist li{position:relative;padding:.55rem 0 .55rem 1.5rem;color:var(--muted);border-top:1px solid var(--line);font-size:.96rem}
+.tlist li::before{content:"";position:absolute;left:.3rem;top:1.08rem;width:8px;height:8px;border-radius:50%}
+.tier-est .tlist li::before{background:var(--teal)}
+.tier-emg .tlist li::before{background:var(--org)}
+.tlist li strong{color:var(--ink)}
+.laytip{display:flex;gap:.85rem;align-items:flex-start;background:rgba(255,255,255,.03);border:1px dashed var(--line);border-radius:12px;padding:.95rem 1.15rem;margin:1.1rem 0 0;color:var(--muted);font-size:.93rem}
+.laytip .ldot{width:11px;height:11px;border-radius:50%;background:var(--cyan);flex:0 0 auto;margin-top:.4rem;position:relative}
+.laytip .ldot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--cyan);animation:udotPulse 2.2s ease-out infinite}
+.laytip p strong{color:var(--ink)}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.4rem}
+@media(max-width:720px){.fit-grid{grid-template-columns:1fr}}
+.lvl-fit .level{background:rgba(20,184,166,.12);color:var(--teal);border:1px solid rgba(20,184,166,.45)}
+.lvl-nofit .level{background:rgba(251,113,185,.12);color:var(--rose);border:1px solid rgba(251,113,185,.45)}
+.fitlist{list-style:none;margin:.7rem 0 0;padding:0}
+.fitlist li{position:relative;padding:.45rem 0 .45rem 1.4rem;color:var(--muted);font-size:.95rem}
+.fitlist li::before{content:"\2013";position:absolute;left:.15rem;color:var(--faint)}
+.fitlist li strong{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.laytip .ldot::after{animation:none;opacity:.35;transform:scale(.8)}}
 /* ===== mini-poll component ===== */
 /* Mini-poll component styles — compact, theme-aware via CSS vars with fallbacks.
    Works inside the TB-500 infographic (which defines --card, --ink, etc.)
@@ -348,7 +378,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #f6aa6b), var(--mpc2, #c3ec72)) border-box;
+    linear-gradient(135deg, var(--mpc1, #6b78f6), var(--mpc2, #c3ec72)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -360,11 +390,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #ef9b0a); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #ef0a3c); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #f6aa6b);
-  box-shadow: 0 0 10px var(--mpc1, #f6aa6b);
+  background: var(--mpc1, #6b78f6);
+  box-shadow: 0 0 10px var(--mpc1, #6b78f6);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +428,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #f6aa6b), var(--acc2, #c3ec72), var(--acc3, #f28035));
+  background: linear-gradient(100deg, var(--acc1, #6b78f6), var(--acc2, #c3ec72), var(--acc3, #3546f2));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -419,23 +449,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #ef9b0a); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #ef9b0a); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #ef9b0a); background: rgba(239, 155, 10,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #ef0a3c); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #ef0a3c); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #ef0a3c); background: rgba(239,10,60,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #f6aa6b), var(--acc2, #c3ec72));
+  background: linear-gradient(100deg, var(--acc1, #6b78f6), var(--acc2, #c3ec72));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #ef9b0a;
-  border: 1px dashed rgba(239, 155, 10,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #ef0a3c;
+  border: 1px dashed rgba(239,10,60,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -443,17 +473,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #ef9b0a); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #ef0a3c); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #f6aa6b), var(--acc2, #c3ec72), var(--acc3, #f28035));
+  background: linear-gradient(90deg, var(--acc1, #6b78f6), var(--acc2, #c3ec72), var(--acc3, #3546f2));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(239, 155, 10,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(239,10,60,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -484,13 +514,27 @@ mini-poll { display: block; }
 .scrollcue{margin-top:3rem;color:var(--faint);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;animation:bob 2.6s ease-in-out infinite}
 #dots{overflow:hidden}
 
+
+.ratehead{text-align:center;font-family:var(--disp);font-size:1.5rem;font-weight:800;margin:2.4rem 0 .2rem;letter-spacing:-.01em}
+.lane{display:flex;gap:1rem;align-items:flex-start;padding:.85rem 0;border-top:1px solid var(--line)}
+.lane:first-of-type{border-top:none}
+.lbadge{flex:0 0 auto;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.32rem .7rem;border-radius:8px;margin-top:.2rem;white-space:nowrap}
+.lbadge.lab{background:rgba(252,153,205,.12);color:var(--sky);border:1px solid rgba(252,153,205,.4)}
+.lbadge.an{background:rgba(239,10,60,.12);color:var(--amber);border:1px solid rgba(239,10,60,.4)}
+.lbadge.hum{background:rgba(244,104,177,.12);color:var(--rose);border:1px solid rgba(244,104,177,.4)}
+.lane p{color:var(--muted);font-size:.95rem;margin:.15rem 0 0}
+.lane strong{color:var(--ink)}
+.diagram h4{font-family:var(--disp)}
+.bridge{max-width:44rem;margin:0 0 1.4rem;color:var(--muted);font-size:1.02rem}
+.bridge strong{color:var(--ink)}
+
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fde998"/><stop offset="50%" stop-color="#fdefb6"/><stop offset="100%" stop-color="#b77f2d"/>
+      <stop offset="0%" stop-color="#fc99cd"/><stop offset="50%" stop-color="#b6bdfd"/><stop offset="100%" stop-color="#83b72d"/>
     </linearGradient>
   </defs>
 </svg>
@@ -515,14 +559,17 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Origin Story</a>
   <a href="#ch3"><span class="n">03</span>How It Might Work</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>What People Say</a>
-  <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>The Comparison</a>
+<a href="#ch6"><span class="n">06</span>Potential Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Who It Suits</a>
+  <a href="#ch8"><span class="n">08</span>Community Reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
-<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a></div></nav>
+<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Compare</a><a href="#ch6">06 · Benefits</a><a href="#ch7">07 · Who it suits</a><a href="#ch8">08 · Reports</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a></div></nav>
 
 <header class="hero">
   <div class="badge"><span class="dot"></span>24-amino-acid mitochondrial peptide · cytoprotection research</div>
@@ -549,14 +596,14 @@ mini-poll { display: block; }
   <h2>What <span class="hl">Humanin</span> actually is</h2>
   <p class="lede">Most peptides here are lab inventions or gland extracts. Humanin is <strong>written into your mitochondria</strong> — a second genome you probably forgot you had.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 210" role="img" aria-label="Humanin chain of 24 amino acids with Bax-binding region highlighted">
+    <svg viewBox="0 0 640 240" role="img" aria-label="Humanin chain of 24 amino acids with Bax-binding region highlighted">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">HUMANIN · 24 AMINO ACIDS — FROM MITOCHONDRIAL DNA</text>
-      <g><circle cx="40.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="64.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="88.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="113.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="137.4" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="161.7" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="186.1" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="210.4" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="234.8" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="259.1" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="283.5" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="307.8" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="332.2" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="356.5" cy="93" r="8.0" fill="#b77f2d" stroke="#fde998" stroke-width="2"/><circle cx="380.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="405.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="429.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="453.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="478.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="502.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="527.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="551.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="575.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g>
-      <rect x="121" y="60" width="251" height="66" rx="12" fill="none" stroke="#b77f2d" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
-      <text x="320" y="152" fill="#fde998" font-size="13" font-weight="800" text-anchor="middle">BAX-BINDING REGION · THE BODYGUARD’S GRIP</text>
+      <g><circle cx="40.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="64.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="88.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="113.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="137.4" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="161.7" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="186.1" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="210.4" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="234.8" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="259.1" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="283.5" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="307.8" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="332.2" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="356.5" cy="93" r="8.0" fill="#83b72d" stroke="#fc99cd" stroke-width="2"/><circle cx="380.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="405.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="429.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="453.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="478.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="502.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="527.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="551.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="575.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g>
+      <rect x="121" y="60" width="251" height="66" rx="12" fill="none" stroke="#83b72d" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
+      <text x="320" y="152" fill="#fc99cd" font-size="13" font-weight="800" text-anchor="middle">BAX-BINDING REGION · THE BODYGUARD’S GRIP</text>
       <text x="320" y="172" fill="#7f88a5" font-size="12" text-anchor="middle">grabs the cell-suicide protein before it can act</text>
-      <rect x="170" y="186" width="300" height="4" rx="2" fill="#fdefb6" opacity=".8"/>
-      <text x="320" y="206" fill="#fdefb6" font-size="12" font-weight="700" text-anchor="middle">ENCODED IN MITOCHONDRIAL DNA · NOT THE NUCLEAR GENOME</text>
+      <rect x="170" y="186" width="300" height="4" rx="2" fill="#b6bdfd" opacity=".8"/>
+      <text x="320" y="206" fill="#b6bdfd" font-size="12" font-weight="700" text-anchor="middle">ENCODED IN MITOCHONDRIAL DNA · NOT THE NUCLEAR GENOME</text>
       <text x="320" y="222" fill="#7f88a5" font-size="11" text-anchor="middle">a gene hiding inside the 16S rRNA region</text>
     </svg>
     <div class="cap">Twenty-four beads; the highlighted stretch intercepts Bax. The chain is read from the mitochondria’s own tiny genome — a second instruction book most people forget they carry.</div>
@@ -565,6 +612,40 @@ mini-poll { display: block; }
     <div class="card teal reveal"><h3>24 links of bodyguard</h3><p>The peptide’s day job: <strong>intercepting Bax</strong>, the protein that orders damaged cells to self-destruct — buying time for repair.</p></div>
     <div class="card org reveal"><h3>Fades with age</h3><p>Circulating levels <strong>decline as we get older</strong> — which is either a clue about aging or just a correlation. Both are possible.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>If your cells are a city, mitochondria are the <strong>power stations</strong> — and Humanin is a <strong>note slipped out of the power station</strong> saying “don’t demolish this building yet.”</p></div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Where Humanin comes from — inside the mitochondrion</h4>
+<svg viewBox="0 0 640 300" role="img" aria-label="Humanin encoded in mitochondrial DNA, produced and released from the mitochondrion">
+  <text x="139" y="30" fill="#fc99cd" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="2">INSIDE THE MITOCHONDRION</text>
+  <rect x="24" y="48" width="230" height="150" rx="70" fill="#0b0c18" stroke="#fc99cd" stroke-width="2"/>
+  <path d="M60 98 q20 -25 40 0 t40 0 t40 0" fill="none" stroke="#3a4160" stroke-width="2.5"/>
+  <path d="M60 148 q20 -25 40 0 t40 0 t40 0" fill="none" stroke="#3a4160" stroke-width="2.5"/>
+  <circle cx="139" cy="123" r="30" fill="none" stroke="#7f88a5" stroke-width="2.5"/>
+  <path d="M139 93 A30 30 0 0 1 165 108" fill="none" stroke="#fc99cd" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="165" cy="108" r="11" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp" style="transform-box:fill-box;transform-origin:center"/>
+  <text x="139" y="218" fill="#7f88a5" font-size="12" text-anchor="middle">mitochondrial DNA</text>
+  <text x="139" y="234" fill="#fc99cd" font-size="11" text-anchor="middle">16S rRNA · small open reading frame</text>
+  <circle r="5" fill="#fc99cd"><animateMotion dur="4.5s" repeatCount="indefinite" path="M254 123 C 320 123, 360 108, 430 108"/></circle>
+  <circle r="5" fill="#fc99cd" opacity=".8"><animateMotion dur="4.5s" begin="1.5s" repeatCount="indefinite" path="M254 123 C 320 123, 360 108, 430 108"/></circle>
+  <circle r="5" fill="#fc99cd" opacity=".6"><animateMotion dur="4.5s" begin="3s" repeatCount="indefinite" path="M254 123 C 320 123, 360 108, 430 108"/></circle>
+  <rect x="430" y="58" width="170" height="100" rx="40" fill="#0b0c18" stroke="#b6bdfd" stroke-width="2"/>
+  <text x="515" y="98" fill="#b6bdfd" font-size="12" font-weight="800" text-anchor="middle">THE CELL</text>
+  <text x="515" y="118" fill="#7f88a5" font-size="11" text-anchor="middle">receives the signal</text>
+  <text x="515" y="134" fill="#7f88a5" font-size="11" text-anchor="middle">outside the mitochondrion</text>
+  <circle cx="560" cy="222" r="24" fill="none" stroke="#3a4160" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="560" y="262" fill="#5b637e" font-size="11" font-weight="800" text-anchor="middle">nucleus ✕</text>
+  <text x="320" y="290" fill="#7f88a5" font-size="12" text-anchor="middle">mitochondrial genome → sORF in 16S rRNA → Humanin → released to signal the cell</text>
+</svg>
+<div class="cap">Not a nuclear-gene product: the recipe lives in the mitochondrion’s own DNA, and the peptide signals outward from there.</div>
+</div>
+<div class="panel reveal">
+<h3>Why Humanin is different</h3>
+<p>Most signaling peptides are <strong>built from nuclear genes</strong> — the main genome’s recipes, manufactured and shipped around the body. Humanin flips that script:</p>
+<div class="grid3">
+<div class="card sky"><h3>Born in the power plant</h3><p>Its code sits in <strong>mitochondrial DNA</strong>, the tiny genome mitochondria kept from their bacterial past. Very few human peptides can say that.</p></div>
+<div class="card teal"><h3>A memo, not a hormone</h3><p>Mitochondria are <strong>signaling organelles</strong>, not just batteries. Humanin is mitochondrial-to-cell communication — a “mitokine.”</p></div>
+<div class="card org"><h3>Tiny, but networked</h3><p>Twenty-four amino acids that <strong>bind Bax and IGFBP-3</strong> and engage receptor pathways — a small molecule with an outsized contact list.</p></div>
+</div>
+</div>
 </section>
 <mini-poll slug="humanin-mini-ch1"
   data-question="Had you heard of Humanin before today?"
@@ -579,21 +660,21 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 220" role="img" aria-label="Timeline of Humanin discovery">
       <line x1="70" y1="120" x2="570" y2="120" stroke="#3a4160" stroke-width="3"/>
-<circle cx="70" cy="120" r="16" fill="none" stroke="#fde998" stroke-width="2" class="ringp"/>
-        <circle cx="70" cy="120" r="8" fill="#fde998"/>
-        <text x="70" y="88" fill="#fde998" font-size="12" font-weight="800" text-anchor="middle">2001</text>
+<circle cx="70" cy="120" r="16" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp"/>
+        <circle cx="70" cy="120" r="8" fill="#fc99cd"/>
+        <text x="70" y="88" fill="#fc99cd" font-size="12" font-weight="800" text-anchor="middle">2001</text>
         <text x="70" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">The discovery</text>
-<circle cx="237" cy="120" r="16" fill="none" stroke="#fdefb6" stroke-width="2" class="ringp"/>
-        <circle cx="237" cy="120" r="8" fill="#fdefb6"/>
-        <text x="237" y="88" fill="#fdefb6" font-size="12" font-weight="800" text-anchor="middle">2000s</text>
+<circle cx="237" cy="120" r="16" fill="none" stroke="#b6bdfd" stroke-width="2" class="ringp"/>
+        <circle cx="237" cy="120" r="8" fill="#b6bdfd"/>
+        <text x="237" y="88" fill="#b6bdfd" font-size="12" font-weight="800" text-anchor="middle">2000s</text>
         <text x="237" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Bax, intercepted</text>
-<circle cx="403" cy="120" r="16" fill="none" stroke="#b77f2d" stroke-width="2" class="ringp"/>
-        <circle cx="403" cy="120" r="8" fill="#b77f2d"/>
-        <text x="403" y="88" fill="#b77f2d" font-size="12" font-weight="800" text-anchor="middle">2010s</text>
+<circle cx="403" cy="120" r="16" fill="none" stroke="#83b72d" stroke-width="2" class="ringp"/>
+        <circle cx="403" cy="120" r="8" fill="#83b72d"/>
+        <text x="403" y="88" fill="#83b72d" font-size="12" font-weight="800" text-anchor="middle">2010s</text>
         <text x="403" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Beyond the brain</text>
-<circle cx="570" cy="120" r="16" fill="none" stroke="#fde998" stroke-width="2" class="ringp"/>
-        <circle cx="570" cy="120" r="8" fill="#fde998"/>
-        <text x="570" y="88" fill="#fde998" font-size="12" font-weight="800" text-anchor="middle">2020s</text>
+<circle cx="570" cy="120" r="16" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp"/>
+        <circle cx="570" cy="120" r="8" fill="#fc99cd"/>
+        <text x="570" y="88" fill="#fc99cd" font-size="12" font-weight="800" text-anchor="middle">2020s</text>
         <text x="570" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">The aging angle</text>
       <text x="320" y="208" fill="#7f88a5" font-size="12" text-anchor="middle">Found by asking “what keeps these brain cells alive?” — and looking in the power plant.</text>
     </svg>
@@ -615,24 +696,24 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Proposed four-step mechanism of Humanin">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fde998" stroke-width="2"/>
-        <circle cx="84" cy="86" r="18" fill="none" stroke="#fde998" stroke-width="2" class="ringp"/>
-        <text x="84" y="118" fill="#fde998">1 · STRESS</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fc99cd" stroke-width="2"/>
+        <circle cx="84" cy="86" r="18" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp"/>
+        <text x="84" y="118" fill="#fc99cd">1 · STRESS</text>
         <text x="84" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Damage</text>
         <text x="84" y="160" fill="#a9b1c9" font-size="11" font-weight="600">threatens</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fdefb6" stroke-width="2"/>
-        <circle cx="236" cy="86" r="18" fill="none" stroke="#fdefb6" stroke-width="2" class="ringp"/>
-        <text x="236" y="118" fill="#fdefb6">2 · INTERCEPT</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#b6bdfd" stroke-width="2"/>
+        <circle cx="236" cy="86" r="18" fill="none" stroke="#b6bdfd" stroke-width="2" class="ringp"/>
+        <text x="236" y="118" fill="#b6bdfd">2 · INTERCEPT</text>
         <text x="236" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Humanin grabs</text>
         <text x="236" y="160" fill="#a9b1c9" font-size="11" font-weight="600">Bax</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#b77f2d" stroke-width="2"/>
-        <circle cx="388" cy="86" r="18" fill="none" stroke="#b77f2d" stroke-width="2" class="ringp"/>
-        <text x="388" y="118" fill="#b77f2d">3 · SOAK</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#83b72d" stroke-width="2"/>
+        <circle cx="388" cy="86" r="18" fill="none" stroke="#83b72d" stroke-width="2" class="ringp"/>
+        <text x="388" y="118" fill="#83b72d">3 · SOAK</text>
         <text x="388" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Mops up</text>
         <text x="388" y="160" fill="#a9b1c9" font-size="11" font-weight="600">IGFBP-3</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fde998" stroke-width="2"/>
-        <circle cx="540" cy="86" r="18" fill="none" stroke="#fde998" stroke-width="2" class="ringp"/>
-        <text x="540" y="118" fill="#fde998">4 · SURVIVE</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fc99cd" stroke-width="2"/>
+        <circle cx="540" cy="86" r="18" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp"/>
+        <text x="540" y="118" fill="#fc99cd">4 · SURVIVE</text>
         <text x="540" y="144" fill="#a9b1c9" font-size="11" font-weight="600">The cell gets</text>
         <text x="540" y="160" fill="#a9b1c9" font-size="11" font-weight="600">a reprieve</text>
       </g>
@@ -644,7 +725,82 @@ mini-poll { display: block; }
       <text x="320" y="220" fill="#7f88a5" font-size="12" text-anchor="middle">The proposed chain — stress, intercept, soak, survive. Named proteins, mapped interactions — all preclinical.</text>
     </svg>
     <div class="cap">The proposed chain — stress, intercept, soak, survive. Named proteins, mapped interactions — all preclinical.</div>
-  </div>  <div class="kv reveal"><span class="k s">Bax: the executioner</span><p><strong>Bax</strong> punches holes in mitochondria to trigger cell suicide. Humanin binds it directly — tackling the assassin before the order goes through.</p></div>
+  </div>
+<div class="bridge reveal"><strong>Humanin doesn’t barge into cells and fix them.</strong> The proposed route is receptor-mediated: the peptide docks on the outside, and the signal does the traveling inside.</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Mitochondria → Humanin → cell protection</h4>
+<svg viewBox="0 0 640 330" role="img" aria-label="Humanin binding proposed receptors FPRL1 and CNTFR complex, activating STAT3 and ERK signaling">
+  <text x="320" y="22" fill="#fc99cd" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="2">RECEPTOR-MEDIATED SIGNALING · PROPOSED</text>
+  <rect x="16" y="100" width="120" height="110" rx="55" fill="#0b0c18" stroke="#fc99cd" stroke-width="2"/>
+  <circle cx="76" cy="155" r="13" fill="none" stroke="#7f88a5" stroke-width="2.5"/>
+  <text x="76" y="232" fill="#7f88a5" font-size="11" text-anchor="middle">mitochondrion</text>
+  <circle r="5" fill="#fc99cd"><animateMotion dur="4.2s" repeatCount="indefinite" path="M136 155 C 200 155, 220 140, 280 140"/></circle>
+  <circle r="5" fill="#fc99cd" opacity=".75"><animateMotion dur="4.2s" begin="1.4s" repeatCount="indefinite" path="M136 155 C 200 155, 220 140, 280 140"/></circle>
+  <circle r="5" fill="#fc99cd" opacity=".5"><animateMotion dur="4.2s" begin="2.8s" repeatCount="indefinite" path="M136 155 C 200 155, 220 140, 280 140"/></circle>
+  <rect x="280" y="40" width="344" height="250" rx="24" fill="#0b0c18" stroke="#b6bdfd" stroke-width="2"/>
+  <text x="452" y="62" fill="#b6bdfd" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="1">TARGET CELL</text>
+  <rect x="274" y="128" width="12" height="24" rx="6" fill="#fc99cd"/>
+  <circle cx="280" cy="140" r="20" fill="none" stroke="#fc99cd" stroke-width="2" class="ringp" style="transform-box:fill-box;transform-origin:center"/>
+  <text x="262" y="144" fill="#fc99cd" font-size="11" font-weight="800" text-anchor="end">FPRL1</text>
+  <rect x="274" y="216" width="12" height="28" rx="6" fill="#b6bdfd"/>
+  <text x="262" y="234" fill="#b6bdfd" font-size="10" font-weight="800" text-anchor="end">CNTFR·WSX-1·gp130</text>
+  <circle cx="400" cy="140" r="22" fill="#0b0c18" stroke="#b6bdfd" stroke-width="2"/>
+  <text x="400" y="136" fill="#b6bdfd" font-size="11" font-weight="800" text-anchor="middle">STAT3</text>
+  <text x="400" y="150" fill="#7f88a5" font-size="9" text-anchor="middle">survival genes</text>
+  <circle cx="400" cy="230" r="22" fill="#0b0c18" stroke="#83b72d" stroke-width="2"/>
+  <text x="400" y="226" fill="#83b72d" font-size="11" font-weight="800" text-anchor="middle">ERK1/2</text>
+  <text x="400" y="240" fill="#7f88a5" font-size="9" text-anchor="middle">stress response</text>
+  <circle r="4" fill="#b6bdfd"><animateMotion dur="3s" repeatCount="indefinite" path="M292 140 H378"/></circle>
+  <circle r="4" fill="#b6bdfd" opacity=".7"><animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M292 140 H378"/></circle>
+  <circle r="4" fill="#83b72d"><animateMotion dur="3s" begin=".7s" repeatCount="indefinite" path="M292 230 H378"/></circle>
+  <circle r="4" fill="#83b72d" opacity=".7"><animateMotion dur="3s" begin="2.2s" repeatCount="indefinite" path="M292 230 H378"/></circle>
+  <rect x="478" y="155" width="120" height="60" rx="12" fill="#0b0c18" stroke="#fc99cd" stroke-width="2"/>
+  <text x="538" y="181" fill="#fc99cd" font-size="11" font-weight="800" text-anchor="middle">cell survival</text>
+  <text x="538" y="197" fill="#7f88a5" font-size="10" text-anchor="middle">stress response</text>
+  <path d="M422 140 C 448 140, 448 168, 478 172" fill="none" stroke="#b6bdfd" stroke-width="2" class="flowseq"/>
+  <path d="M422 230 C 448 230, 448 202, 478 198" fill="none" stroke="#83b72d" stroke-width="2" class="flowseq2"/>
+  <text x="320" y="320" fill="#7f88a5" font-size="11" text-anchor="middle">receptor identities proposed from lab studies — Humanin stays outside; the signal goes in</text>
+</svg>
+<div class="cap">Dock outside, signal inside: the proposed route through FPRL1 and the CNTFR·WSX-1·gp130 complex to STAT3 and ERK1/2.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Cell under stress — the proposed sequence</h4>
+<svg viewBox="0 0 640 270" role="img" aria-label="Stressed cell, mitochondrial dysfunction, Bax signaling, Humanin interception">
+  <g font-size="13" font-weight="800" text-anchor="middle">
+    <rect x="20" y="50" width="128" height="150" rx="14" fill="#0b0c18" stroke="#f468b1" stroke-width="2"/>
+    <circle cx="84" cy="100" r="24" fill="none" stroke="#f468b1" stroke-width="2.5" class="glow-pulse"/>
+    <path d="M52 78 l10 -12 M116 78 l-10 -12 M52 122 l10 12 M116 122 l-10 12" stroke="#f468b1" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="84" y="150" fill="#f468b1">1 · STRESS</text>
+    <text x="84" y="168" fill="#a9b1c9" font-size="11" font-weight="600">damage</text>
+    <text x="84" y="182" fill="#a9b1c9" font-size="11" font-weight="600">threatens</text>
+    <rect x="172" y="50" width="128" height="150" rx="14" fill="#0b0c18" stroke="#fc99cd" stroke-width="2"/>
+    <ellipse cx="236" cy="100" rx="32" ry="20" fill="none" stroke="#fc99cd" stroke-width="2.5" class="glow-pulse"/>
+    <text x="236" y="150" fill="#fc99cd">2 · FALTER</text>
+    <text x="236" y="168" fill="#a9b1c9" font-size="11" font-weight="600">mitochondria</text>
+    <text x="236" y="182" fill="#a9b1c9" font-size="11" font-weight="600">struggle</text>
+    <rect x="324" y="50" width="128" height="150" rx="14" fill="#0b0c18" stroke="#f468b1" stroke-width="2"/>
+    <text x="388" y="150" fill="#f468b1">3 · SIGNAL</text>
+    <text x="388" y="168" fill="#a9b1c9" font-size="11" font-weight="600">Bax moves in —</text>
+    <text x="388" y="182" fill="#a9b1c9" font-size="11" font-weight="600">death ordered</text>
+    <circle r="7" fill="#f468b1"><animateMotion dur="3s" repeatCount="indefinite" path="M340 100 H436"/></circle>
+    <circle r="7" fill="#f468b1" opacity=".6"><animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M340 100 H436"/></circle>
+    <rect x="476" y="50" width="128" height="150" rx="14" fill="#0b0c18" stroke="#fc99cd" stroke-width="2"/>
+    <circle cx="540" cy="100" r="16" fill="none" stroke="#fc99cd" stroke-width="2" stroke-dasharray="5 4" class="glow-pulse"/>
+    <circle cx="540" cy="100" r="6" fill="#f468b1" opacity=".4"/>
+    <circle cx="540" cy="100" r="6" fill="none" stroke="#fc99cd" stroke-width="2"/>
+    <text x="540" y="150" fill="#fc99cd">4 · INTERCEPT</text>
+    <text x="540" y="168" fill="#a9b1c9" font-size="11" font-weight="600">Humanin grabs</text>
+    <text x="540" y="182" fill="#a9b1c9" font-size="11" font-weight="600">Bax — reprieve</text>
+  </g>
+  <g stroke="#7f88a5" stroke-width="2" fill="none">
+    <path d="M148 100 h24" class="flowseq1"/>
+    <path d="M300 100 h24" class="flowseq2"/>
+    <path d="M452 100 h24" class="flowseq3"/>
+  </g>
+  <text x="320" y="240" fill="#7f88a5" font-size="12" text-anchor="middle">the proposed sequence — stress, falter, signal, intercept. Order matters; none of this is shown in people.</text>
+</svg>
+<div class="cap">Stress → mitochondrial trouble → Bax death signal → Humanin interception. The order is the mechanism.</div>
+</div>  <div class="kv reveal"><span class="k s">Bax: the executioner</span><p><strong>Bax</strong> punches holes in mitochondria to trigger cell suicide. Humanin binds it directly — tackling the assassin before the order goes through.</p></div>
   <div class="kv reveal"><span class="k t">A second interception</span><p>It also binds <strong>IGFBP-3</strong>, another death-signal carrier — a bodyguard working two doors at once.</p></div>
   <div class="kv reveal"><span class="k o">General, not specific</span><p>Protection shows up against <strong>many different death triggers</strong> — amyloid, toxins, metabolic stress. Breadth is the point.</p></div><div class="plain reveal"><div class="plabel">Plain English</div><p>The chain: <strong>stress → intercept → soak → survive</strong>. It’s a bodyguard that tackles two assassins — elegant, and entirely unproven in people.</p></div>
 </section>
@@ -658,14 +814,34 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">04</span>Evidence check</span>
   <h2>What the science <span class="hl">actually</span> supports</h2>
   <p class="lede">The rare peptide with a <strong>crisp mechanism and no human data</strong> — the full file, honestly sized.</p>
-    <div class="ebar"><div class="row"><span class="t">Cell protection (dishes)</span><span class="v">strong and consistent</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#fdefb6,#fef8e1)"></div></div><div class="note">Protects neurons and other cells from multiple death triggers — the founding observation, widely replicated.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Alzheimer’s models</span><span class="v">promising in animals</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#fde998,#fdefb6)"></div></div><div class="note">Improves memory and reduces pathology in mouse models — mice are not tiny people.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Metabolic / heart models</span><span class="v">early signals</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#fde998,#b77f2d)"></div></div><div class="note">Diabetes and cardiovascular models show protective effects — scattered but real.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Human trials</span><span class="v">none of note</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No efficacy trials in people. The aging and longevity angle is correlation only.</div></div><div class="grid3">
+    <div class="ebar reveal"><div class="row"><span class="t">Cell protection (dishes)</span><span class="v">strong and consistent</span></div><div class="track"><div class="fill" style="--w:80%;background:linear-gradient(90deg,#b6bdfd,#e1e4fe)"></div></div><div class="note">Protects neurons and other cells from multiple death triggers — the founding observation, widely replicated.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Alzheimer’s models</span><span class="v">promising in animals</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#fc99cd,#b6bdfd)"></div></div><div class="note">Improves memory and reduces pathology in mouse models — mice are not tiny people.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Metabolic / heart models</span><span class="v">early signals</span></div><div class="track"><div class="fill" style="--w:45%;background:linear-gradient(90deg,#fc99cd,#83b72d)"></div></div><div class="note">Diabetes and cardiovascular models show protective effects — scattered but real.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Human trials</span><span class="v">none of note</span></div><div class="track"><div class="fill" style="--w:3%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">No efficacy trials in people. The aging and longevity angle is correlation only.</div></div><div class="grid3">
     <div class="card sky reveal"><h3>Mechanism-rich, trial-poor</h3><p>Humanin is the <strong>opposite of a drug</strong> and the portrait of a research darling: beautiful biology, zero human data.</p></div>
     <div class="card teal reveal"><h3>The correlation trap</h3><p>“Declines with age” describes <strong>thousands</strong> of molecules. Restoring levels has often done nothing — the biomarker fallacy in one sentence.</p></div>
     <div class="card org reveal"><h3>Mice are not tiny people</h3><p>Alzheimer’s mouse models have a <strong>perfect record of curing mice</strong> and a dismal record of predicting human drugs. Discount accordingly.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Beautiful biology, <strong>zero human trials</strong>. File Humanin under “fascinating, unproven” — the largest category in peptide science.</p></div>
+<div class="panel reveal">
+<h3>Research lanes — what’s established where</h3>
+<div class="lane"><span class="lbadge lab">Lab · cells</span><div><strong>Cellular stress protection</strong><p>Humanin shields cultured cells from multiple death triggers — the founding observation, widely replicated.</p></div></div>
+<div class="lane"><span class="lbadge lab">Lab · cells</span><div><strong>Apoptosis blockade</strong><p>Bax interception is mapped at the molecular level — the crispest part of the whole story.</p></div></div>
+<div class="lane"><span class="lbadge lab">Lab · cells</span><div><strong>Oxidative stress</strong><p>Consistent protective signals in cell models — mechanism proposed, not proven in people.</p></div></div>
+<div class="lane"><span class="lbadge an">Animal</span><div><strong>Metabolic signaling</strong><p>Rodent models show metabolic effects — early, scattered, and rodent-only.</p></div></div>
+<div class="lane"><span class="lbadge an">Animal</span><div><strong>Neuroprotection</strong><p>Promising in animal Alzheimer’s models. Human evidence: <strong>none</strong>.</p></div></div>
+</div>
+<div class="grid2">
+<div class="card sky reveal"><h3>What it does <span class="chem">in models</span></h3><ul>
+<li>Blocks Bax-driven cell death <strong>in dishes</strong></li>
+<li>Protects neurons in <strong>animal</strong> Alzheimer’s models</li>
+<li>Shows metabolic and heart signals <strong>in rodents</strong></li>
+<li>Acts as a <strong>mitochondrial-to-cell signal</strong></li></ul></div>
+<div class="card org reveal"><h3>What it doesn’t do</h3><ul>
+<li>Has <strong>no human efficacy trials</strong> — nothing proven in people</li>
+<li>Doesn’t replace ATP or “recharge” mitochondria</li>
+<li>Isn’t an approved treatment for <strong>any</strong> condition</li>
+<li>Isn’t proven to extend human lifespan</li></ul></div>
+</div>
 </section>
 <mini-poll slug="humanin-mini-ch4"
   data-question="Beautiful mechanism, zero human trials — your read?"
@@ -674,27 +850,147 @@ mini-poll { display: block; }
 
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Humanin has <strong>no gray-market scene</strong> — its stories are longevity-forum speculation.</p>
-  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div><div class="anec-grid">
-    <div class="anec reveal"><div class="anec-head"><h4>The longevity bet</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“If levels fall with age, topping up must help, right?”</p><div class="caveat"><strong>Caveat:</strong> declining with age describes <strong>thousands</strong> of molecules<br><strong>Pattern:</strong> the biomarker fallacy — correlation dressed as prescription</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The Alzheimer’s hope</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Anything that protected those brain cells…”</p><div class="caveat"><strong>Caveat:</strong> dish protection vs a human brain — a canyon between<br><strong>Pattern:</strong> desperation plus a beautiful mechanism</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Mitochondria maxing</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I stack everything mitochondrial.”</p><div class="caveat"><strong>Caveat:</strong> stacks make attribution impossible<br><strong>Pattern:</strong> organelle-themed supplement piles</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The researcher quote</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“A scientist called it the most exciting peptide.”</p><div class="caveat"><strong>Caveat:</strong> scientists get excited about mechanisms; patients need outcomes<br><strong>Pattern:</strong> borrowed enthusiasm</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Waiting for trials</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I’ll believe it when there’s a phase 1.”</p><div class="caveat"><strong>Caveat:</strong> the most reasonable comment in the thread<br><strong>Pattern:</strong> evidence patience</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The analog chatter</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Stronger versions are being designed.”</p><div class="caveat"><strong>Caveat:</strong> souped-up analogs are <strong>further</strong> from human proof, not closer<br><strong>Pattern:</strong> mistaking engineering for evidence</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The skeptic’s shrug</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Another mouse miracle.”</p><div class="caveat"><strong>Caveat:</strong> the base rate is on the skeptic’s side<br><strong>Pattern:</strong> base-rate realism — unpopular, usually right</div></div>
-  </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Longevity forums run on <strong>mechanisms and hope</strong>. Humanin has the best mechanism stories here — and the same zero human trials.</p></div>
+  <span class="eyebrow"><span class="n">05</span>The comparison</span>
+  <h2>Humanin vs <span class="hl">MOTS-c</span> vs <span class="hl">SS-31</span></h2>
+  <p class="lede">Three names that orbit mitochondria — <strong>two are messages from the power plant, one is a drug sent to it.</strong> That distinction changes everything.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Humanin</h3><p><strong>Mitochondrial-derived</strong> — the organelle’s own outgoing mail.</p><ul>
+<li><strong>Origin:</strong> mtDNA 16S rRNA · 24 amino acids</li>
+<li><strong>Proposed role:</strong> cytoprotection — Bax interception + receptor signaling</li>
+<li><strong>Evidence:</strong> cells + animals · <strong>no human trials</strong></li></ul></div>
+    <div class="card teal reveal"><h3>MOTS-c</h3><p><strong>Mitochondrial-derived</strong> — a second memo from the same post office.</p><ul>
+<li><strong>Origin:</strong> mtDNA 12S rRNA · 16 amino acids</li>
+<li><strong>Proposed role:</strong> metabolic regulation — AMPK and folate-cycle signaling</li>
+<li><strong>Evidence:</strong> cells + animals · limited human data</li></ul></div>
+    <div class="card org reveal"><h3>SS-31</h3><p><strong>Mitochondria-targeted synthetic</strong> — engineered, not inherited.</p><ul>
+<li><strong>Origin:</strong> lab-designed tetrapeptide · <strong>not</strong> made by mitochondria</li>
+<li><strong>Proposed role:</strong> binds cardiolipin in the inner membrane, stabilizes it</li>
+<li><strong>Evidence:</strong> animals + human trials in some indications</li></ul></div>
+  </div>
+  <div class="panel reveal">
+  <h3>The key difference</h3>
+  <p><strong>Humanin and MOTS-c are mitochondrial-derived peptides</strong> — messages the power plant writes to the rest of the cell. <strong>SS-31 is a mitochondria-targeted synthetic peptide</strong> — a drug designed in a lab and sent <em>to</em> the mitochondria. Same zip code, completely different mechanism — and very different evidence bases. Don’t let the shared “mito” branding blur that.</p>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Humanin and MOTS-c are <strong>notes from the power plant</strong>. SS-31 is a <strong>repair crew dispatched to it</strong>. Comparing their evidence head-to-head misses the point — they aren’t the same kind of thing.</p></div>
 </section>
 <mini-poll slug="humanin-mini-ch5"
-  data-question="How do you read “levels fall with age, so topping up must help”?"
-  data-answers='[["📉", "Sounds logical"], ["⚠️", "The biomarker fallacy"], ["🧂", "Needs salt"], ["⚖️", "Stories aren’t data"]]'>
+  data-question="Humanin vs MOTS-c vs SS-31 — what&#39;s the key difference?"
+  data-answers='[["🧬", "Humanin & MOTS-c are made by mitochondria"], ["💊", "SS-31 is synthetic, sent to mitochondria"], ["🎯", "Different targets entirely"], ["🤔", "Still fuzzy on it"]]'>
 </mini-poll>
-
 <!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>Risks & unknowns</span>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>Potential <span class="hl">benefits</span></h2>
+  <p class="lede">A crisp mechanism, zero human data. What Humanin’s benefits would be if the biology ever translated to people — strictly tiered.</p>
+  <div class="tier tier-est reveal">
+    <span class="tbadge b-est">Established scientific data</span>
+    <p class="tintro">Real, replicated lab science — none of it in people.</p>
+    <ul class="tlist">
+      <li><strong>Cell protection in dishes.</strong> Shields neurons and other cells from multiple death triggers — the founding observation, widely replicated.</li>
+      <li><strong>Bax interception, mapped.</strong> The molecular block of Bax-driven cell death is the crispest mechanism on this page — named proteins, defined interactions.</li>
+      <li><strong>Neuroprotection in animal Alzheimer’s models.</strong> Improved memory and reduced pathology in mice — real, and rodent-only.</li>
+      <li><strong>Levels decline with age.</strong> A genuine observation in people — and only that: a correlation, not a prescription.</li>
+    </ul>
+    <div class="laytip"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> Humanin is a bouncer standing between the troublemaker (Bax, the protein that orders damaged cells to self-destruct) and the door. In the dish, the bouncer works every time. Whether he even shows up in a person — we have no idea.</p></div>
+  </div>
+  <div class="tier tier-emg reveal">
+    <span class="tbadge b-emg">Predicted or emerging data</span>
+    <p class="tintro">The reason people are excited — and exactly where excitement outruns proof.</p>
+    <ul class="tlist">
+      <li><strong>Alzheimer’s relevance in people.</strong> Predicted from mouse models — but mice are not tiny people, and Alzheimer’s mouse models have a perfect record of curing mice and a dismal record of predicting human drugs.</li>
+      <li><strong>Metabolic and cardiovascular protection.</strong> Rodent models show protective metabolic signals — early, scattered, and rodent-only.</li>
+      <li><strong>“Aging itself.”</strong> “Declines with age” describes thousands of molecules; restoring levels has often done nothing — the biomarker fallacy in one sentence.</li>
+    </ul>
+  </div>
+  <div class="tier tier-com reveal">
+    <span class="tbadge b-com">Community reports · stories, not data</span>
+    <div class="ulegend"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
+    <div class="anec-grid">
+      <div class="anec reveal">
+        <div class="anec-head"><h4>Energy up</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div>
+        <p>“I just feel more energetic since starting.” <strong>Caveat:</strong> energy is the most placebo-prone outcome there is — and Humanin has almost no gray-market scene, so the sample is tiny.</p>
+        <div class="caveat">Pattern: energy as the universal anecdote.</div>
+      </div>
+      <div class="anec reveal">
+        <div class="anec-head"><h4>Brain fog lifting</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div>
+        <p>“Thinking feels clearer, like the fog thinned.” <strong>Caveat:</strong> fog lifts for a hundred reasons; without controls it’s weather, not medicine.</p>
+        <div class="caveat">Pattern: cognition is expectation’s playground.</div>
+      </div>
+      <div class="anec reveal">
+        <div class="anec-head"><h4>My longevity bet</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div>
+        <p>“Levels fall with age, so this is my hedge.” <strong>Caveat:</strong> the biomarker fallacy — “declines with age” is not “restoring it helps.”</p>
+        <div class="caveat">Pattern: correlation purchased as causation.</div>
+      </div>
+      <div class="anec reveal">
+        <div class="anec-head"><h4>Honestly? Nothing.</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div>
+        <p>“Tried it for a month. Felt exactly the same.” <strong>Caveat:</strong> negative reports vanish quickly in enthusiast spaces — this one deserves extra weight.</p>
+        <div class="caveat">Pattern: quiet non-response, heavily underreported.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<mini-poll slug="humanin-mini-benefits"
+  data-question="Which Humanin benefit interests you most?"
+  data-answers='[["🧫", "Cell-protection data"], ["🐭", "Mouse Alzheimer’s models"], ["⏳", "The longevity correlation"], ["📊", "None until human trials"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Who it suits</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">Two separate boxes: who this molecule is actually for right now, and who should stay well clear. This is general information, not personal medical advice.</p>
+  <div class="fit-grid">
+    <div class="scard lvl-fit reveal">
+      <span class="level">May be relevant to</span>
+      <h4>Who it’s actually for</h4>
+      <ul class="fitlist">
+        <li><strong>Researchers</strong> studying cell-death pathways, mitochondrial signaling, and neurodegeneration models — the true and only current audience.</li>
+        <li><strong>Clinicians and trial designers</strong> — if human studies ever happen, they will be the ones running them, under protocols.</li>
+        <li><strong>Longevity-curious readers, as spectators.</strong> Beautiful biology worth following — curiosity needs no vial.</li>
+      </ul>
+    </div>
+    <div class="scard lvl-nofit reveal">
+      <span class="level">May not suit · extra caution</span>
+      <h4>Who should stay clear</h4>
+      <ul class="fitlist">
+        <li><strong>Anyone considering actual use.</strong> Zero human data means zero safety profile — unknown means unknown.</li>
+        <li><strong>People with cancer history or risk.</strong> Blocking cell death broadly is theoretically double-edged — cells self-destruct for reasons, including killing would-be cancer cells.</li>
+        <li><strong>Pregnant or nursing people</strong> — no safety data at any level.</li>
+        <li><strong>Buyers of unregulated “Humanin.”</strong> The research peptide and the online vial share only a name — and this molecule barely has an online scene at all.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="laytip reveal"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> this page is a spectator sport, not a menu. The most honest relationship with Humanin right now is watching the research like a nature documentary.</p></div>
+</section>
+<mini-poll slug="humanin-mini-fit"
+  data-question="Biggest reason Humanin stays research-only?"
+  data-answers='[["🧫", "Zero human data"], ["⚠️", "Blocking cell death is risky"], ["🧠", "Brain delivery unknown"], ["✅", "All of the above"]]'>
+</mini-poll>
+
+
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Humanin has almost <strong>no gray-market scene</strong> — the chatter lives in longevity forums, Reddit, TikTok, and YouTube, and it’s mostly speculation plus a few personal experiments.</p>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div><div class="anec-grid">
+    <div class="anec reveal"><div class="anec-head"><h4>Energy up</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I just feel more energetic since starting.”</p><div class="caveat"><strong>Caveat:</strong> energy is the most placebo-prone outcome there is<br><strong>Pattern:</strong> vitality anecdotes with no baseline</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Brain fog lifting</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Thinking feels clearer, like the fog thinned.”</p><div class="caveat"><strong>Caveat:</strong> zero human cognition data exists<br><strong>Pattern:</strong> hope plus a beautiful mechanism</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Workouts bounce back</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Recovery between sessions got faster.”</p><div class="caveat"><strong>Caveat:</strong> confounded by training, sleep, and everything else<br><strong>Pattern:</strong> recovery stories without controls</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Blood sugar felt steadier</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Fewer crashes after meals.”</p><div class="caveat"><strong>Caveat:</strong> feelings aren’t glucometers<br><strong>Pattern:</strong> metabolic speculation from rodent data</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>My longevity bet</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Levels fall with age, so this is my hedge.”</p><div class="caveat"><strong>Caveat:</strong> the biomarker fallacy — correlation dressed as prescription<br><strong>Pattern:</strong> aging-anxiety purchasing</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Honestly? Nothing.</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Tried it for a month. Felt exactly the same.”</p><div class="caveat"><strong>Caveat:</strong> negative reports are under-shared online<br><strong>Pattern:</strong> non-responder honesty — the quiet majority</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The stack problem</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I take it with twelve other things.”</p><div class="caveat"><strong>Caveat:</strong> stacks make attribution impossible<br><strong>Pattern:</strong> confound city — no single cause survives</div></div>
+  </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Longevity corners of the internet run on <strong>mechanisms and hope</strong>. Humanin has the best mechanism stories around — and the same zero human trials as everything else in the pile.</p></div>
+</section>
+<mini-poll slug="humanin-mini-ch6"
+  data-question="Which community-report pattern rings truest?"
+  data-answers='[["⚡", "Energy anecdotes"], ["🧠", "Cognition stories"], ["🧂", "Take them with salt"], ["⚖️", "Stories aren&#39;t data"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks & <span class="hl">unknowns</span></h2>
   <p class="lede">A bodyguard that blocks cell suicide — which is exactly as double-edged as it sounds.</p>
   <div class="safety-grid">
@@ -706,84 +1002,94 @@ mini-poll { display: block; }
     <div class="scard lvl-unknown reveal"><span class="level">Unknown</span><h4>Brain delivery</h4><p><strong>Unknown:</strong> whether the peptide even reaches the brain in people — the blood-brain barrier is a formidable bouncer.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>The core tension: <strong>stopping cell death is powerful medicine and powerful risk</strong> — the body uses that switch carefully for a reason.</p></div>
 </section>
-<mini-poll slug="humanin-mini-ch6"
+<mini-poll slug="humanin-mini-ch7"
   data-question="Biggest theoretical worry?"
   data-answers='[["⚠️", "Blocking needed cell death"], ["🧠", "Whether it reaches the brain"], ["🧪", "No human safety data"], ["❓", "All of it"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 7 ============ -->
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">mitochondria</span></h2>
-  <p class="lede">Eleven terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<!-- ============ CHAPTER 10 ============ -->
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">Humanin</span> Terminology</h2>
+  <p class="lede">Thirteen terms, each with the scientific definition and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><circle cx="24" cy="24" r="11" fill="none" stroke="#fde998" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#fde998"/></svg><span class="term">Humanin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A 24-amino-acid peptide encoded in mitochondrial DNA (16S rRNA region). Cytoprotective: binds Bax and IGFBP-3 to block cell death.</p>
-      <p class="gex"><span class="gslabel">Example</span>The peptide this page is about — the power plant’s secret note.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A tiny bodyguard mailed from the mitochondria.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><circle cx="24" cy="24" r="11" fill="none" stroke="#fc99cd" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#fc99cd"/></svg><span class="term">Humanin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Humanin is a 24-amino-acid peptide encoded by a small open reading frame inside the mitochondrial 16S rRNA region. It was discovered in 2001 in a screen for genes that protect neurons against amyloid-beta toxicity. Its protective action works by binding pro-death proteins — notably Bax and IGFBP-3 — and blocking their cell-killing programs. It can also signal through cell-surface receptors to switch on survival pathways inside the cell. It is a research molecule, not an approved drug, and human efficacy has not been established.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Deep inside your cells' power plants sits a tiny backup genome, and hidden in it is the recipe for Humanin — a 24-piece chain. Scientists found it in 2001 while hunting for anything that keeps brain cells alive under Alzheimer's-like stress. It works like a bodyguard, physically blocking two different self-destruct signals, Bax and IGFBP-3. It can also ring a receptor on the cell surface to switch on survival programs. It is a research molecule, not a medicine — none of this is proven in people.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fdefb6" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fdefb6" stroke-width="2.5"/></svg><span class="term">Mitochondria</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The cell’s energy producers — descended from ancient bacteria, carrying their own small genome.</p>
-      <p class="gex"><span class="gslabel">Example</span>Humanin’s home — the power station with a side hustle in signaling.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The cell’s power plants — now known to send memos too.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#b6bdfd" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#b6bdfd" stroke-width="2.5"/></svg><span class="term">Mitochondria</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Mitochondria are the cell's main energy producers, converting fuel into ATP through the electron transport chain. They descended from ancient bacteria engulfed by early cells, which is why they carry their own small circular genome. Beyond energy, they control cell-death decisions: when damaged, they release signals that trigger apoptosis. They also produce signaling peptides, including Humanin and MOTS-c, that coordinate stress responses across the cell. Because of these roles, mitochondria sit at the crossroads of metabolism, aging, and neurodegeneration research.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Mitochondria are the parts of your cells that turn food into usable energy. They are ancient bacteria that moved in billions of years ago, which is why they carry their own little genome. They also hold the cell's self-destruct switch: when badly damaged, they release the signals that trigger orderly cell death. And they send out peptide memos like Humanin to coordinate stress responses. That is why they sit at the center of aging and brain-disease research.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#b77f2d" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Mitochondrial DNA</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The small circular genome inside mitochondria, inherited from your mother — just 37 genes, one of which hides Humanin.</p>
-      <p class="gex"><span class="gslabel">Example</span>The second instruction book — where Humanin’s recipe lives.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A tiny backup genome in the power plant.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><path d="M10 24h28M24 10v28" fill="none" stroke="#83b72d" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Mitochondrial DNA</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Mitochondrial DNA is the small circular genome inside mitochondria, a leftover of their bacterial ancestry. It carries just 37 genes — mostly for energy-production machinery — and is inherited exclusively from the mother. For decades it was thought to encode only proteins, but small open reading frames within it, like the ones producing Humanin and MOTS-c, revealed hidden peptide messages. Mutations in mitochondrial DNA accumulate with age and disease. Its maternal inheritance makes it a unique tool for tracing ancestry.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Alongside the big genome in your cells' nucleus, your mitochondria carry a tiny circular instruction book of their own — just 37 genes. You inherit it only from your mother. Scientists long assumed it only contained energy-machinery recipes, until hidden mini-recipes like Humanin's turned up inside. Damage to this little genome builds up with age. It is the second instruction book where Humanin's recipe lives.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#fde998" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bax</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A protein that triggers cell suicide by punching holes in mitochondria — the executioner Humanin tackles.</p>
-      <p class="gex"><span class="gslabel">Example</span>The assassin — Humanin’s main interception target.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The cell’s self-destruct button-pusher.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#fc99cd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Bax</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Bax is a pro-death protein of the Bcl-2 family that executes cell suicide at the mitochondrial membrane. When activated by stress signals, it punches holes in the mitochondrial outer membrane, releasing cytochrome c and triggering the apoptotic cascade. Humanin physically binds Bax and blocks this pore-forming action, which is its best-characterized protective mechanism. The balance between Bax and its anti-death relatives decides whether a stressed cell lives or dies. Because of that decisive role, Bax is a major target in both cancer and neuroprotection research.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>When a cell is badly stressed, a protein called Bax punches holes in the mitochondria and sets off the cell's orderly self-destruction. Humanin tackles this executioner directly, binding Bax and stopping it from drilling those holes. Whether a stressed cell lives or dies comes down to the tug-of-war between Bax and its opponents. That is why Bax is such a big deal in both cancer and brain research.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M24 8l14 24H10z" fill="none" stroke="#fdefb6" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#fdefb6"/></svg><span class="term">Apoptosis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Programmed cell death — orderly self-dismantling, distinct from messy rupture (necrosis).</p>
-      <p class="gex"><span class="gslabel">Example</span>What Bax orders and Humanin delays — the central tug-of-war.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Cellular seppuku — tidy, deliberate self-destruction.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M24 8l14 24H10z" fill="none" stroke="#b6bdfd" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#b6bdfd"/></svg><span class="term">Apoptosis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Apoptosis is programmed cell death — the orderly, energy-driven dismantling of a cell from the inside. It differs from necrosis, the messy rupture caused by injury: apoptosis packages the cell into tidy fragments that neighboring cells clear without inflammation. It is essential in development, immunity, and cancer prevention, removing damaged or unwanted cells. Too much apoptosis drives neurodegeneration; too little lets cancers grow. Humanin's cytoprotective role is to delay or block this program in stressed cells.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Apoptosis is the cell's tidy self-demolition program — it takes itself apart in neat packages that neighbors clean up without causing inflammation. It is different from necrosis, the messy bursting of injured cells. Your body uses it constantly: in development, in immunity, in weeding out damaged cells. Too much of it kills brain cells in degenerative disease; too little lets cancer grow. Humanin's job is to hit pause on this program.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#b77f2d" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">IGFBP-3</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A carrier protein for growth factors that can also ferry death signals — Humanin’s second interception target.</p>
-      <p class="gex"><span class="gslabel">Example</span>The second assassin — the bodyguard works two doors.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A molecular courier that sometimes delivers bad news.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#83b72d" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">IGFBP-3</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>IGFBP-3 is a carrier protein that transports insulin-like growth factors in the blood, controlling how much is available to tissues. Beyond that carrying job, it can independently promote cell death under stress conditions. Humanin binds IGFBP-3 and neutralizes this death-signaling role — its second interception target after Bax. This dual action, blocking two separate death routes, is central to Humanin's cytoprotective profile. IGFBP-3's two faces illustrate how growth-factor regulation and cell-death control are linked.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>IGFBP-3 is mostly a delivery driver, carrying growth factors around the blood and controlling how much tissues get. But under stress it can also pass along a death message. Humanin intercepts it too — its second bodyguard assignment after Bax. Blocking two separate kill orders is what makes Humanin's protection unusually broad. One protein, two jobs, and Humanin guards against both.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#fde998" stroke-width="2.5"/><path d="M18 24h12" stroke="#fde998" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Cytoprotection</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Shielding cells from damage or death — Humanin’s entire job description.</p>
-      <p class="gex"><span class="gslabel">Example</span>The category — not curing disease, just keeping cells alive.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Bodyguarding cells against stress.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#fc99cd" stroke-width="2.5"/><path d="M18 24h12" stroke="#fc99cd" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Cytoprotection</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Cytoprotection is the shielding of cells from damage or death under stress — through anti-death signaling, antioxidant defenses, or stabilizing fragile structures. It is Humanin's entire job description: keeping neurons and other cells alive under toxic or degenerative insults. The concept is distinct from cure: cytoprotection preserves cells but does not remove the underlying disease trigger. Its promise and its limit are the same — buying time for damaged tissue. Whether lab-demonstrated cytoprotection becomes a human therapy remains an open question.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Cytoprotection just means bodyguarding cells — keeping them alive through stress that would otherwise kill them. That is Humanin's entire job description. Note what it is not: a cure. It buys time for damaged cells; it does not remove whatever is damaging them. That is both its promise and its limit.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#fdefb6" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#fdefb6"/><circle cx="34" cy="34" r="3" fill="#fdefb6"/></svg><span class="term">Neuroprotection</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Protecting neurons from damage or death — Humanin’s founding context.</p>
-      <p class="gex"><span class="gslabel">Example</span>The original headline — brain cells surviving Alzheimer’s-like insults.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Keeping brain cells alive under attack.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#b6bdfd" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#b6bdfd"/><circle cx="34" cy="34" r="3" fill="#b6bdfd"/></svg><span class="term">Neuroprotection</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Neuroprotection means protecting neurons from damage or death caused by injury, toxins, or degenerative disease. Humanin was discovered in exactly this context — a screen for factors that keep neurons alive against amyloid-beta toxicity. Because lost neurons are rarely replaced, protecting the ones that exist is a central goal of Alzheimer's and stroke research. Many neuroprotective candidates succeed in cell and animal models but fail in humans. Humanin remains in that preclinical category: promising biology, unproven medicine.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Neuroprotection means keeping brain cells alive under attack — from toxins, injury, or degenerative disease. It is where Humanin was born: the original screen hunted for protectors of neurons facing Alzheimer's-like damage. Because dead neurons are rarely replaced, protection is a huge goal in brain research. Many protectors work in dishes and animals but fail in people, and Humanin is still in that unproven category.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#b77f2d" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#b77f2d"/></svg><span class="term">Amyloid-beta</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The protein fragment that clumps into Alzheimer’s plaques — one of the death triggers Humanin guarded against in the discovery screen.</p>
-      <p class="gex"><span class="gslabel">Example</span>The original villain — what the 2001 screen was defending against.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The gunk that piles up in Alzheimer’s brains.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><circle cx="24" cy="24" r="11" fill="none" stroke="#83b72d" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#83b72d"/></svg><span class="term">Amyloid-beta</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Amyloid-beta is a protein fragment snipped from a larger precursor protein in the brain. It normally clears away, but in Alzheimer's disease it clumps into plaques and toxic soluble forms that stress and kill neurons. It was the death trigger in the 2001 discovery screen that found Humanin: only cells making Humanin survived the amyloid insult. Whether plaques cause Alzheimer's or are a byproduct remains debated, but amyloid-beta toxicity is a standard lab model of neuronal injury. Its role in the Humanin story is as the original villain the peptide guarded against.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Amyloid-beta is a protein fragment that, in Alzheimer's disease, clumps into plaques and toxic forms that stress brain cells. It was the poison in the 2001 experiment that discovered Humanin — only cells making the peptide survived it. Scientists still argue about whether the clumps cause the disease or are a side effect. Either way, amyloid-beta remains the classic lab stand-in for the kind of damage Humanin guards against.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fde998" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fde998" stroke-width="2.5"/></svg><span class="term">16S rRNA</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A mitochondrial gene region best known for making ribosomal RNA — with Humanin’s code tucked inside it.</p>
-      <p class="gex"><span class="gslabel">Example</span>The hiding spot — a gene within a gene.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A stretch of mitochondrial DNA moonlighting as a peptide recipe.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fde99822"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#fc99cd" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#fc99cd" stroke-width="2.5"/></svg><span class="term">16S rRNA</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The 16S rRNA gene is a mitochondrial gene region best known for producing ribosomal RNA — a structural component of the mitochondrial protein-making machinery. Hidden inside it is a small open reading frame that encodes Humanin, making it a gene within a gene. Its discovery upended the assumption that mitochondrial DNA encodes only energy proteins. The region is also a workhorse marker for studying mitochondrial ancestry and evolution. In the Humanin story, it is simply the hiding spot where the peptide's recipe was found.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>The 16S rRNA region is a stretch of mitochondrial DNA famous for making a piece of the cell's protein-building machinery. Tucked inside it is a much smaller recipe — the one for Humanin. Finding a gene within a gene surprised everyone, because the little genome was thought to hold only energy recipes. The region also helps scientists trace maternal ancestry. In this story, it is simply the hiding spot.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M10 24h28M24 10v28" fill="none" stroke="#fdefb6" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Longevity</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The study of aging and lifespan — where Humanin’s declining-with-age pattern draws attention.</p>
-      <p class="gex"><span class="gslabel">Example</span>The hype magnet — correlation, not prescription.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The science of aging — full of tempting correlations.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><path d="M10 24h28M24 10v28" fill="none" stroke="#b6bdfd" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Longevity</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Longevity is the study of aging and lifespan — what determines how long organisms live and how healthily. Humanin drew attention here because its levels appear to decline with age, and higher levels correlate with healthier aging in some studies. That is a correlation, not a prescription: declining levels do not prove that adding the peptide extends life. Aging research is full of such tempting correlations that fail as interventions. The honest framing is that Humanin is an interesting aging biomarker and research lead, not an anti-aging treatment.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Longevity science studies why we age and what sets lifespan. Humanin got pulled into it because its levels seem to fall as we get older, and higher levels track with healthier aging in some studies. But a link is not a lever: falling levels do not prove that topping them up extends life. Aging research is littered with tempting correlations that flopped as treatments. Humanin is an interesting clue about aging, not an anti-aging therapy.</div>
     </div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fdefb622"/><circle cx="24" cy="24" r="11" fill="none" stroke="#b6bdfd" stroke-width="2.5"/><path d="M24 13v22" stroke="#b6bdfd" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">MOTS-c</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>MOTS-c is a 16-amino-acid peptide encoded in the mitochondrial 12S rRNA region, discovered in 2015. It regulates metabolism: it activates AMPK signaling, shifts cells toward energy-efficient fuel use, and has been studied for obesity and insulin resistance. It is Humanin's younger sibling in the family of mitochondrial-derived peptides — same mitochondrial origin, different job. Like Humanin, it is a research compound with no approved human use. The infographic compares the two as the metabolic memo versus the survival memo.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>MOTS-c is another memo from the mitochondria — a 16-piece chain hidden in a different part of the little genome. Where Humanin is about survival, MOTS-c is about metabolism: it flips the cell toward efficient energy use and has been studied for weight and blood-sugar problems. Same post office, different letter. Like Humanin, it is research-only with no approved human use.</div>
+    </div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#b77f2d22"/><rect x="14" y="14" width="20" height="20" rx="10" fill="none" stroke="#83b72d" stroke-width="2.5"/><circle cx="24" cy="24" r="4" fill="#83b72d"/></svg><span class="term">SS-31</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>SS-31 is a synthetic four-amino-acid peptide designed to concentrate in mitochondria and bind cardiolipin, a key lipid of the inner mitochondrial membrane. By stabilizing cardiolipin, it aims to keep the electron transport chain efficient under stress — a repair-crew approach rather than a natural signal. Unlike Humanin and MOTS-c, it was engineered in a lab rather than discovered as a mitochondrial message. It has reached human trials in some indications, with mixed results. The contrast in the infographic is deliberate: a drug sent to the power plant versus messages sent from it.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>SS-31 is not a message from the mitochondria — it is a repair crew sent there. Chemists designed this four-piece chain to home in on mitochondria and stabilize cardiolipin, a key fat in the energy machinery. Unlike Humanin, it was engineered in a lab rather than discovered in nature. It has reached human trials in some conditions with mixed results. The contrast is the point: one is the power plant's own note, the other is outside help dispatched to it.</div></div>
+  </div>
   </div>
 </section>
-<mini-poll slug="humanin-mini-ch7"
+<mini-poll slug="humanin-mini-ch8"
   data-question="Which term was newest to you?"
   data-answers='[["⚡", "Mitochondrial DNA"], ["💀", "Bax"], ["🍂", "Apoptosis"], ["🧬", "16S rRNA"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. A beautiful mechanism from an unexpected genome — and not one human data point.</p>
+  <p class="lede">Eleven chapters, distilled. A beautiful mechanism from an unexpected genome — and not one human data point.</p>
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧬</div><h4>Hidden in mitochondria</h4><p>Encoded in <strong>mitochondrial DNA</strong> — a second genome’s secret peptide.</p></div>
     <div class="take reveal"><div class="tk">🛡️</div><h4>A cell-death blocker</h4><p>Binds <strong>Bax</strong> and IGFBP-3 — intercepting the suicide order.</p></div>
@@ -804,7 +1110,8 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="humanin-mini-ch8"
+<h3 class="ratehead reveal">⭐ How would you rate this infographic?</h3>
+<mini-poll slug="humanin-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -827,6 +1134,7 @@ mini-poll { display: block; }
 (function(){
 "use strict";
 var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(reduced){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}
 /* ---------- theme ---------- */
 function setTheme(t){
   document.documentElement.setAttribute("data-theme",t);
@@ -847,7 +1155,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fde998", "#ab7321", "#fdefb6", "#a16207", "#b77f2d", "#fde998"];
+  var colors=["#fc99cd", "#77ab21", "#b6bdfd", "#a10758", "#83b72d", "#fc99cd"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -954,7 +1262,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -997,7 +1305,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fde998", "#fdefb6", "#b77f2d", "#ef9b0a", "#edf0f9"],parts=[];
+  var cols=["#fc99cd", "#b6bdfd", "#83b72d", "#ef0a3c", "#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1033,12 +1341,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fde998", "#fdefb6", "#ac7526", "#a16207", "#b77f2d", "#fef3c7", "#ef9b0a", "#713f12", "#885306"] };
+  accents: ["#fc99cd", "#b6bdfd", "#ac266c", "#a10758", "#83b72d", "#fec7e4", "#ef0a3c", "#121b71", "#88064a"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="humanin-mini-ch1"
+     <mini-poll slug="humanin-mini-recap"
        data-question="Had you heard of Humanin before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1117,8 +1425,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#f6aa6b', '#c3ec72', '#f28035', '#a78bfa', '#f472b6',
-                 '#c3ec72', '#ef9b0a', '#f46884', '#22d3ee'];
+                ['#6b78f6', '#c3ec72', '#3546f2', '#a78bfa', '#f472b6',
+                 '#c3ec72', '#ef0a3c', '#f468b1', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
